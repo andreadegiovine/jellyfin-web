@@ -804,7 +804,7 @@ function buildCard(index, item, apiClient, options) {
         innerCardFooter += '<div class="mediaSourceIndicator">' + mediaSourceCount + '</div>';
     }
 
-    const itemCommunityRating = item.CommunityRating || 1;
+    const itemCommunityRating = item.CommunityRating || 0;
     if (itemCommunityRating > 1 && options.disableIndicators !== true) {
         innerCardFooter += '<div class="starRatingIndicator"><span class="material-icons starIcon star" aria-hidden="true"></span>' + itemCommunityRating.toFixed(1) + '</div>';
     }
