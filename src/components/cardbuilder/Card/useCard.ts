@@ -96,7 +96,8 @@ function useCard({ item, cardOptions }: UseCardProps) {
                 && item.Type !== ItemKind.MusicArtist
                 && item.Type !== ItemKind.Audio
         },
-        { itemAction: layoutManager.tv }
+        { itemAction: layoutManager.tv },
+        { 'show-focus': layoutManager.tv }
     );
 
     const cardBoxClass = classNames(

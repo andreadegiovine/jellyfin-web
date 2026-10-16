@@ -38,7 +38,7 @@ class LayoutManager {
         }
 
         console.debug('[LayoutManager] using layout mode', normalizedLayout);
-        this.modern = !isLegacyLayout;
+        this.modern = true;
         if (layoutValue === LayoutMode.Modern) {
             const legacyLayoutMode = browser.mobile ? LayoutMode.Mobile : LayoutMode.Desktop;
             console.debug('[LayoutManager] using legacy layout mode', legacyLayoutMode);
